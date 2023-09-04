@@ -18,6 +18,8 @@ function main(){
     tempNode = tempNode.next;
   }
   console.log(first)
+
+  console.log("The average is: ", averageOfElements(headNode))
 }
 
 function averageOfElements(headNode){
@@ -36,4 +38,3 @@ function averageOfElements(headNode){
 }
 
 main();
-console.log("The average is: ", averageOfElements(headNode));

@@ -4,7 +4,7 @@
 struct Node {
   int data;
   struct Node* next;
-}
+};
 
 int main(){
   struct Node* head = NULL;
@@ -24,5 +24,21 @@ int main(){
     }
   }
 
-  return 0
+
+  printf("The Linked List has the following Nodes:\n");
+  current = head;
+
+  while (current != NULL){
+    printf("%d ", current-> data);
+    current = current->next;
+  }
+
+  current=head;
+  while (current != NULL){
+    struct Node* temp = current;
+    current = current->next;
+    free(temp);
+  }
+
+  return 0;
 }

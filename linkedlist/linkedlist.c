@@ -29,7 +29,7 @@ int main(){
   current = head;
 
   while (current != NULL){
-    printf("%d ", current-> data);
+    printf("%d\n", current-> data);
     current = current->next;
   }
 
@@ -40,5 +40,4 @@ int main(){
     free(temp);
   }
 
-  return 0;
 }

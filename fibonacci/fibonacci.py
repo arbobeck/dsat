@@ -13,7 +13,6 @@ def generate_fibonacci(n):
             fibonacci_sequence.append(next_number)
     return fibonacci_sequence
 
-# Example usage:
 n = int(input("Enter the number of Fibonacci numbers to generate: "))
 fibonacci_sequence = generate_fibonacci(n)
 print(f"Fibonacci sequence of length {n}:")
